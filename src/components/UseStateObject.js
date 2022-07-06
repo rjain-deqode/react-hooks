@@ -6,14 +6,21 @@ export const UseStateObject = () => {
     age: 24,
     message: "Random message",
   });
+
+//   multiple state value
+const [name, setName] = useState('Peter');
+const [age, setAge] = useState(24);
+const [message, setMessage] = useState('Random message');
+
   const changeMessage = () => {
-    setPeople({...people, message:"Hello People"})
+    // setPeople({...people, message:"Hello People"})
+    setMessage("Hello People")
   };
   return (
     <div>
-      <h2>{people.name}</h2>
-      <p>{people.age}</p>
-      <p>{people.message}</p>
+      <h2>{name}</h2>
+      <p>{age}</p>
+      <p>{message}</p>
       <button onClick={changeMessage} className="btn">Change Message</button>
     </div>
   );
