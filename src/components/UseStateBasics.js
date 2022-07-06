@@ -24,8 +24,9 @@ export const UseStateBasics = () => {
   };
   return (
     <>
-      <h1>{text}</h1>
-      <button onClick={handleChange}>Change Text</button>
+      <h1>Change title</h1>
+      <h3>{text}</h3>
+      <button className="btn" onClick={handleChange}>Change Text</button>
     </>
   );
 };
