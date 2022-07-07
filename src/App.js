@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import { Tour } from "./components/Tour";
+
 
 function App() {
   return (
     <div className="container">
-      <Tour />
+     <h1>Advance React</h1>
     </div>
   );
 }
