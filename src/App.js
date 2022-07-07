@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
+import { UseEffectBasics } from "./components/UseEffectBasics";
 
 
 function App() {
   return (
     <div className="container">
-     <h1>Advance React</h1>
+      <UseEffectBasics />
     </div>
   );
 }
